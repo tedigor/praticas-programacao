@@ -1,0 +1,15 @@
+6 – Coesão: refere-se ao princípio de responsabilidade única. Uma classe uma classe não deve assumir responsabilidades que não são suas.
+Acoplamento: refere-se a dependência que uma classe tem com outra.
+
+7 – o “==” é um operador booleano que compara se os objetos são idênticos, ou seja, ocupam a mesma posição de memória. O equals() é um método que compara apenas o conteúdo dos objetos.
+
+8 – Sobreposição: Permite que o método seja reescrito com a mesma assinatura da sua classe pai, com um comportamento diferente.
+Sobrecarga: Reescrita do método na mesma classe, porém com argumentos diferentes.
+
+9 – A classe abstrata pode conter métodos completos ou incompletos, enquanto a interface possui apenas a assinatura dos métodos. Uma classe pode implementar várias interfaces, mas só pode herdar apenas de uma classe abstrata.
+
+10 – Checked Exceptions: Causadas normalmente por indisponibilidade ou inexistência do recurso
+Unchecked Exceptions: Causadas geralmente por erros de implementação (podem ser corrigidas programaticamente).
+Errors: Situações incomuns que não são causadas por erro de implementação
+
+11 – Na herança, a classe filha têm os mesmos atributos da classe pai e pode possuir atributos distintos. Na composição, uma determinada classe está contida em outra classe.
