@@ -1,0 +1,34 @@
+1. 	Um grupo de itens em sequência e que aceita repetição.
+
+2.	Grupo de dados que não armazena a posição em que os elementos estão armazenados, isto é, ela entende que as classes que a 
+	implementam são como conjuntos matemáticos onde a posição não é relevante.
+
+3. 	As classes que implementam o Map possuem a característica de armazenar pares chaves - valor.
+
+4.	ArrayList em sua implementação, guarda os itens em um array enquanto uma LinkedList guarda seus itens por referência. 
+	Já o Vector, como o ArrayList, utiliza array na sua implementação porém é thread safe, ou seja, apenas uma thread pode utilizar o Vector por vez. 
+	As vantagens do ArrayList acontecem quando se deve buscar um objeto pelo seu index, ou adicionar um objeto na última posição do array. 
+	As desvantagens acontecem quando se tem que adicionar um objeto no início da lista ou procurar um objeto pelo seu valor e não pelo index.
+	
+5.	No remove(Object) do ArrayList, é feito um busca na lista procurando pelo seu valor utilizando um for, no pior dos casos o objeto está na última 
+	posição. Após isso, é colocado nulo na posição em que o objeto está contido e os outros objetos são realocados para cobrir a 
+	coluna deixada pelo objeto. Enquanto na LinkedList é feita uma busca pelo seu valor com um for e o objeto é removido simplesmente alterando as 
+	referências que apontavam para o mesmo.
+	O indexOf(Object) percorre a lista e retorna a posição do array em ArrayList e de um contador em LinkedList, em que o objeto está alocado.
+	O contains(Object) ,em ambos os tipos de listas, seus valores são percorridos comparando seus valores e retorna verdadeiro se for encontrado e 
+	false se contrário.
+
+6.	Fazer esse tipo de remoção não é recomendado pois o tamanho da lista é alterado ao remover um item. O correto é utilizar um iterator juntamente com 
+	um while, isso faz com que a operação seja segura.
+	
+7.	HashSet utiliza um código hash gerado para encontrar seus objetos com isso o HashSet é extremamente eficiente porém não tem nenhuma ordenação, já TreeSet 
+	utiliza hash e um comparable para ordenar seus itens, perdendo um pouco de performance e por fim o LinkedHashSet é um meio termo onde ele utiliza lista 
+	linkada para ordenar os itens da tabela Hash.
+
+8.	Essas estruturas se baseiam em uma tabela que armazena endereços para identificar seus elementos com isso a tabela não aceita repetições. Um exemplo disso é o 
+	porteiro de um prédio consegue identificar os apartamentos pelo seu número.
+	
+9.	O método compareTo(Object, Object), o método recebe dois objetos e retorna -1, 0 ou 1, dependendo disso, o objeto de comparação é maior igual ou menor que o outro 
+	objeto comparado.
+
+10.	LinkedHashMap, HashMap e TreeMap são as mesmas que as Set, a diferença é que os objetos são mapeados com keys.
